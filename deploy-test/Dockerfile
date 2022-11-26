@@ -9,6 +9,9 @@ RUN npm install --global pm2
 
 COPY ./ ./
 
+
+RUN npm run build
+
 EXPOSE 3000
 
 USER node
